@@ -52,22 +52,6 @@ internal sealed class GroupConfiguration : object, Microsoft
 					.WithMany()
 					.HasForeignKey(foreignKeyPropertyNames: "GroupId")
 				);
-
-		//builder
-		//	.HasMany(current => current.Users)
-		//	.WithMany(other => other.Groups)
-		//	.UsingEntity(joinEntityName: "UsersInGroups",
-		//		left => left.HasOne(relatedType: typeof(Domain.Features.Identity.Group))
-		//			.WithMany()
-		//			.HasPrincipalKey(keyPropertyNames: "GroupId"),
-		//			//.HasForeignKey(foreignKeyPropertyNames: "GroupId"),
-
-		//		right => right.HasOne(relatedType: typeof(Domain.Features.Identity.User))
-		//			.WithMany()
-		//			.HasPrincipalKey(keyPropertyNames: "UserId"),
-		//			//.HasForeignKey(foreignKeyPropertyNames: "UserId"),
-		//		join => join.HasKey("GroupId", "UserId")
-		//		);
 		// **************************************************
 		// **************************************************
 		// **************************************************

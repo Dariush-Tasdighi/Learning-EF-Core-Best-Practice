@@ -234,6 +234,26 @@ public class User :
 	public System.Guid EmailAddressVerificationKey { get; private set; }
 	#endregion /public System.Guid EmailAddressVerificationKey { get; private set; }
 
+	//#region public string? AdminDescription { get; set; }
+	///// <summary>
+	///// توضیحات مدیریتی
+	///// </summary>
+	//[System.ComponentModel.DataAnnotations.Display
+	//	(ResourceType = typeof(Resources.DataDictionary),
+	//	Name = nameof(Resources.DataDictionary.AdministratorDescription))]
+	//public string? AdminDescription { get; set; }
+	//#endregion /public string? AdminDescription { get; set; }
+
+	//#region public string? AdministratorDescription { get; set; }
+	///// <summary>
+	///// توضیحات مدیریتی
+	///// </summary>
+	//[System.ComponentModel.DataAnnotations.Display
+	//	(ResourceType = typeof(Resources.DataDictionary),
+	//	Name = nameof(Resources.DataDictionary.AdministratorDescription))]
+	//public string? AdministratorDescription { get; set; }
+	//#endregion /public string? AdministratorDescription { get; set; }
+
 	#endregion /Properties
 
 	#region Methods
