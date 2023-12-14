@@ -41,7 +41,7 @@ internal sealed class GroupConfiguration : object, Microsoft
 		//	;
 
 		// نکته بسیار مهم! ترتیب نوشتن دستورات ذیل بی‌نهایت اهمیت دارد
- 		builder
+		builder
 			.HasMany(current => current.Users)
 			.WithMany(other => other.Groups)
 			.UsingEntity(joinEntityName: "UsersInGroups",

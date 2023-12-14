@@ -13,7 +13,6 @@ internal static class ModelBuilderExtensions : object
 			};
 
 		RoleUser.Create();
-
 		// **************************************************
 
 		// **************************************************
@@ -46,22 +45,6 @@ internal static class ModelBuilderExtensions : object
 		SeedUsers(modelBuilder: modelBuilder);
 	}
 	#endregion /Seed()
-
-	#region SeedRoles()
-	private static void SeedRoles
-		(Microsoft.EntityFrameworkCore.ModelBuilder modelBuilder)
-	{
-		// **************************************************
-		modelBuilder.Entity<Domain.Features
-			.Identity.Role>().HasData(data: RoleUser);
-		// **************************************************
-
-		// **************************************************
-		modelBuilder.Entity<Domain.Features
-			.Identity.Role>().HasData(data: RoleAdministrator);
-		// **************************************************
-	}
-	#endregion /SeedRoles()
 
 	#region SeedGroups()
 	private static void SeedGroups
@@ -109,6 +92,22 @@ internal static class ModelBuilderExtensions : object
 		// **************************************************
 	}
 	#endregion /SeedGroups()
+
+	#region SeedRoles()
+	private static void SeedRoles
+		(Microsoft.EntityFrameworkCore.ModelBuilder modelBuilder)
+	{
+		// **************************************************
+		modelBuilder.Entity<Domain.Features
+			.Identity.Role>().HasData(data: RoleUser);
+		// **************************************************
+
+		// **************************************************
+		modelBuilder.Entity<Domain.Features
+			.Identity.Role>().HasData(data: RoleAdministrator);
+		// **************************************************
+	}
+	#endregion /SeedRoles()
 
 	#region SeedUsers()
 	private static void SeedUsers
