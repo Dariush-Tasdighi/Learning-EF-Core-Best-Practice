@@ -4,7 +4,7 @@
 
 //{
 //	#region Constructor
-//	public MainDatabaseContext(Microsoft.EntityFrameworkCore
+//	public DatabaseContext(Microsoft.EntityFrameworkCore
 //		.DbContextOptions<DatabaseContext> options) : base(options: options)
 //	{
 //	}
